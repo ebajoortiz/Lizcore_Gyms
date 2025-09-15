@@ -1,0 +1,47 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+.venv*/
+env/
+venv/
+.env
+.env.*
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- IDE / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- Data ----
+data/raw/*
+!data/raw/.gitkeep
+data/tmp/
+data/interim/
+data/processed/*
+!data/processed/.gitkeep
+*.csv.zip
+*.parquet
+*.feather
+
+# ---- Reports / Figures ----
+reports/figures/*
+!reports/figures/.gitkeep
+
+# ---- Power BI ----
+*.pbix
+*.pbit
+
+# ---- Logs ----
+logs/
+*.log
+
+# ---- Git LFS (optional; tracked separately) ----
+# See .gitattributes if you enable LFS
