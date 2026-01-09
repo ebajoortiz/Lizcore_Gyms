@@ -110,10 +110,17 @@ Columnas principales (además de las originales):
 
 ---
 
-## 📊 Indicadores y hallazgos (ejemplos)
-- **Cobertura del dataset**: 500 registros entre **2025-01-01** y **2025-03-01**; 100 usuarios únicos y 30 rutas.
-- **Calidad**: 25 nulos en `attempts` y 26 en `session_duration_min` se tratan con imputación **por grado**. No se eliminaron registros por outliers (solo **5** marcados).
-- **Popularidad de rutas**: el archivo `route_popularity_summary.csv` recoge para cada ruta y grado: **n.º de sesiones, n.º de usuarios, tasa de éxito y media de intentos**; listo para ranking/filtrado en dashboards.
+## 📊 Indicadores y hallazgos
+
+El análisis de datos del gimnasio Lizcore revela patrones de uso estables y predecibles, con una mayor ocupación durante los fines de semana y menor afluencia a comienzos de semana. La actividad se mantiene equilibrada en términos de dificultad, con una tasa de éxito global en torno al 51 %, lo que sugiere un buen balance entre reto y accesibilidad para los escaladores.
+
+A nivel de dificultad, el grado 6c destaca como el más escalado y el más conseguido, posicionándose como el punto óptimo de engagement. En contraste, algunos grados como 5a y 7a presentan tasas de éxito inferiores a lo esperado, lo que puede indicar vías ligeramente más exigentes que el estándar asignado.
+
+El análisis de popularidad muestra una alta concentración de la actividad, ya que las 10 vías más populares representan más del 42 % de las sesiones totales. Al mismo tiempo, se detectan vías con baja actividad reciente, identificándolas como candidatas a rotación o reajuste para mejorar la utilización del muro y la motivación de los usuarios.
+
+Desde el punto de vista de calidad de datos, se detectó un pequeño porcentaje de sesiones sin duración o intentos registrados (≈5 %). Estos valores se trataron mediante una imputación conservadora basada en la mediana por grado, manteniendo además sesiones extremas como outliers marcados para no perder información relevante.
+
+En conjunto, este análisis permite tomar decisiones operativas basadas en datos, optimizando la planificación de rutas, la gestión del personal en horas punta y la experiencia general de los escaladores.
 
 ---
 
